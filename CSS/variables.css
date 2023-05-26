@@ -1,0 +1,55 @@
+:root {
+    /**Colores**/
+    --color-principal: #583d0d;
+    --color-secundario: #b3890e;
+    --color-principal-matiz: #a2926d;
+    --color-fondo: #fbf8f3;
+    --color-fondo-opacidad: #fbf8f3ed;
+    --color-text: #4d4d4d;
+
+    /**Fuentes**/
+    --fuente-principal: 'Alegreya Sans';
+
+    /**Font-size**/
+    --text-size-menu: 1.5em;
+    --text-size-apartados: 2.5em;
+    --text-size-cuerpo: 1em;
+    --text-size-destacado: 1.125em;
+    --text-size-cuerpo-mayor: 1.25em;
+    --text-size-h1: 1.5em;
+    --text-size-h2: 1.5em;
+    --text-size-h3: 1.25em;
+    --text-size-boton: 2em;
+
+    /**Medidas**/
+    --border-radius: .5em;
+    --border-radius-menu: calc(var(--border-radius)/8);
+    --border-radius-btn: calc(var(--border-radius)/6);
+    --boder-botom: 0.2em solid var(--color-secundario);
+    --border-fino: 0.12em solid var(--color-secundario);
+
+    /**Animaciones**/
+    --animation: animation--bar 2s alternate ease-out;
+}
+
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 3em;
+    right: 1.25em;
+    z-index: 99;
+    font-size: var(--text-size-destacado);
+    width: 2.5em;
+    height: 2.5em;
+    background-color:var(--color-principal);
+    color: var(--color-fondo);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+#scrollBtn:hover {
+    opacity: 1;
+}
