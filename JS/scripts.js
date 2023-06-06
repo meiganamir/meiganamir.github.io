@@ -25,6 +25,9 @@ function scrollFunction() {
 }
 
 function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    var scrollToTopBtn = document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollToTopBtn > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, scrollToTopBtn - scrollToTopBtn / 8);
+    }
 }
